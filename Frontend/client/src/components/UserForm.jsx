@@ -11,7 +11,7 @@ function UserForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://<your-backend-url>/api/users', form);
+      await axios.post('https://hostingdemo-3xk4.onrender.com/api/users', form);
       alert('Data submitted');
       setForm({ name: '', email: '' });
     } catch (err) {
